@@ -1,4 +1,4 @@
 - type: web
-  name: Konstantinos.Pechlivanidis
+  name: Personal-Portfolio
   buildCommand: echo "Nothing to build"
   staticPublishPath: .
