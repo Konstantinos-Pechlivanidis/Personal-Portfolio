@@ -30,8 +30,14 @@ const toggleNavbar = function () {
   document.body.classList.toggle("nav-active");
 }
 
+
+const toggleFromLinks = function () {
+  navbar.classList.remove("active");
+  overlay.classList.remove("active");
+  document.body.classList.remove("nav-active");
+}
 addEventOnElements(navTogglers, "click", toggleNavbar);
-// addEventOnElements(navbarLinks, "click", toggleNavbar);
+addEventOnElements(navbarLinks, "click", toggleFromLinks);
 
 
 /**
