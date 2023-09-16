@@ -31,7 +31,7 @@ const toggleNavbar = function () {
 }
 
 addEventOnElements(navTogglers, "click", toggleNavbar);
-addEventOnElements(navbarLinks, "click", toggleNavbar);
+// addEventOnElements(navbarLinks, "click", toggleNavbar);
 
 
 /**
