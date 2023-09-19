@@ -75,7 +75,7 @@
             </button>
           </div>
 
-          <ul class="navbar-list">
+          <ul language="Greek" class="navbar-list">
             <li>
               <a href="#" class="navbar-link">Εγώ</a>
             </li>
@@ -90,6 +90,24 @@
 
             <li>
               <a href="#contact" class="navbar-link">Επικοινωνία</a>
+            </li>
+          </ul>
+
+          <ul language="English" class="navbar-list" style="display: none">
+            <li>
+              <a href="#" class="navbar-link">Home</a>
+            </li>
+
+            <li>
+              <a href="#about" class="navbar-link">About</a>
+            </li>
+
+            <li>
+              <a href="#projects" class="navbar-link">Projects</a>
+            </li>
+
+            <li>
+              <a href="#contact" class="navbar-link">Contact</a>
             </li>
           </ul>
 
@@ -127,6 +145,12 @@
                 <ion-icon name="logo-github"></ion-icon>
               </a>
             </li>
+
+            <li>
+              <button id="toggle-language-button" class="btn-language">
+                Ελληνικά
+              </button>
+            </li>
           </ul>
         </nav>
 
@@ -157,7 +181,7 @@
               />
             </figure>
 
-            <div class="hero-content">
+            <div language="Greek" class="hero-content">
               <h1
                 class="h1 hero-title"
                 data-reveal="top"
@@ -190,6 +214,36 @@
                 >
               </div>
             </div>
+
+            <div language="English" class="hero-content" style="display: none">
+              <h1
+                class="h1 hero-title"
+                data-reveal="top"
+                data-reveal-delay="0.5s"
+              >
+                Web Developer
+              </h1>
+
+              <p
+                class="section-text"
+                data-reveal="top"
+                data-reveal-delay="0.55s"
+              >
+                My name is Konstantinos Pechlivanidis. I am a dedicated web
+                developer and web designer with the goal of bringing your ideas
+                to life. Let's create something amazing together!
+              </p>
+
+              <div
+                class="btn-wrapper"
+                data-reveal="top"
+                data-reveal-delay="0.75s"
+              >
+                <a href="#projects" class="btn btn-primary">See my works</a>
+
+                <a href="#contact" class="btn btn-secondary">Contact me</a>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -200,7 +254,7 @@
         <section id="about" class="section about" aria-label="about">
           <div class="container">
             <div class="wrapper">
-              <div data-reveal="left">
+              <div language="Greek" data-reveal="left">
                 <h2 class="h2 section-title">Ο τομέας μου;</h2>
 
                 <p class="section-text">
@@ -212,6 +266,20 @@
                   στην εξερεύνηση νέων τεχνολογιών και πλαισίων. Εάν αναζητάτε
                   έναν ευέλικτο προγραμματιστή για να βελτιώσετε την ομάδα σας,
                   μη διστάσετε να επικοινωνήσετε μαζί μου.
+                </p>
+              </div>
+
+              <div language="English" data-reveal="left" style="display: none">
+                <h2 class="h2 section-title">What I do?</h2>
+
+                <p class="section-text">
+                  I specialize in JavaScript and in particular React.js for
+                  front-end development. I also excel in building complete web
+                  applications with the MERN Stack as well as building
+                  user-friendly WordPress websites. I am committed to continuous
+                  learning and open minded in exploring new technologies and
+                  frameworks. If you are looking for a flexible developer to
+                  improve your team, Feel free to contact me.
                 </p>
               </div>
 
@@ -293,10 +361,15 @@
 
                   <h3 class="h4 card-title">Web Development</h3>
 
-                  <p class="card-text">
+                  <p language="Greek" class="card-text">
                     Στοχεύω στη κατασκευή ιστοσελίδων που θα μετατρέψουν τις
                     ιδέες σας σε ψηφιακή πραγματικότητα και θα σας προσφέρουν
                     εξαιρετικές διαδικτυακές εμπειρίες.
+                  </p>
+
+                  <p language="English" class="card-text" style="display: none">
+                    I aim to build websites that will convert your ideas into
+                    digital reality and will offer you great online experiences.
                   </p>
                 </div>
               </li>
@@ -315,10 +388,15 @@
 
                   <h3 class="h4 card-title">Web Design</h3>
 
-                  <p class="card-text">
+                  <p language="Greek" class="card-text">
                     Εστιάζω στη δημιουργία απρόσκοπτης εμπειρίας χρήστη, είτε
                     πρόκειται για τη δημιουργία αποκριτικών εφαρμογών ιστού είτε
                     για το σχεδιασμό φιλικών προς το χρήστη διεπαφών.
+                  </p>
+                  <p language="English" class="card-text" style="display: none">
+                    I focus on creating a seamless user experience, either it's
+                    about building responsive web apps either for designing
+                    user-friendly interfaces.
                   </p>
                 </div>
               </li>
@@ -337,11 +415,16 @@
 
                   <h3 class="h4 card-title">Databases & APIs</h3>
 
-                  <p class="card-text">
+                  <p language="Greek" class="card-text">
                     Σχεδιάζω και διαχειρίζομαι βάσεις δεδομένων και Apis
                     διασφαλίζοντας ότι τα δεδομένα είναι οργανωμένα, ασφαλή και
                     εύκολα προσβάσιμα. Η τεχνογνωσία μου περιλαμβάνει SQL και
                     MongoDB.
+                  </p>
+                  <p language="English" class="card-text" style="display: none">
+                    I design and manage databases and Apis ensuring that data is
+                    organized, secure and easily accessible. My expertise
+                    includes SQL and MongoDB.
                   </p>
                 </div>
               </li>
@@ -360,10 +443,15 @@
 
                   <h3 class="h4 card-title">Wordpress & SEO</h3>
 
-                  <p class="card-text">
+                  <p language="Greek" class="card-text">
                     Ειδικεύομαι στην ανάπτυξη WordPress, δημιουργώντας οπτικά
                     ελκυστικές και βελτιστοποιημένές για SEO ιστοσελίδες που
                     οδηγούν στην οργανική επισκεψιμότητα και αφοσίωση.
+                  </p>
+                  <p language="English" class="card-text" style="display: none">
+                    I specialize in WordPress development, creating visually
+                    attractive and SEO-optimized websites that drive organic
+                    traffic and engagement.
                   </p>
                 </div>
               </li>
@@ -382,13 +470,22 @@
         >
           <div class="container">
             <div class="title-wrapper" data-reveal="top">
-              <div>
+              <div language="Greek">
                 <h2 class="h2 section-title" id="project-label">
-                  Projects που ξεχωρίζουν
+                  Projects που ξεχωρίζουν.
                 </h2>
 
                 <p class="section-text">
                   Εξερευνήστε τη συλλογή των πιο σημαντικών project μου.
+                </p>
+              </div>
+              <div language="English" style="display: none">
+                <h2 class="h2 section-title" id="project-label">
+                  Projects that stand out.
+                </h2>
+
+                <p class="section-text">
+                  Explore the collection of my most important projects.
                 </p>
               </div>
               <a href="https://github.com/true-hero23" class="btn btn-secondary"
@@ -408,7 +505,7 @@
                     </p>
 
                     <h3 class="h3 card-title">Crypto Amigo</h3>
-                    <div class="card-text">
+                    <div language="Greek" class="card-text">
                       <p class="bold">Διπλωματική Εργασία</p>
                       Ολοκληρωμένη Διαδικτυακή Εφαρμογή παρακολούθησης των
                       κρυπτονομισμάτων. Μείνετε ενημερωμένοι με ενημερωμένα
@@ -435,12 +532,53 @@
                         ></ion-icon>
                       </a>
                     </div>
+
+                    <div
+                      language="English"
+                      class="card-text"
+                      style="display: none"
+                    >
+                      <p class="bold">Diploma Thesis</p>
+                      Complete Online Tracking Application of cryptocurrencies.
+                      Stay updated with updated cryptocurrency price statistics
+                      and fundamentals information. Access real-time data time,
+                      market information and key metrics for informed investment
+                      decisions.
+                      <p class="bold">Technologies</p>
+                      MongoDB, Express Js, React Js, Node Js <br />
+                      Mern Stack.
+                      <p class="bold">Προκλήσεις, Επιτεύγματα</p>
+                      Read my Thesis powerpoint and you will see exactly the
+                      challenges I faced.
+                      <a
+                        href="https://docs.google.com/presentation/d/1vGReDkGcUqrsIBjhHTEUGbCWoCYFk5DW/edit?usp=sharing&ouid=100524400333273931371&rtpof=true&sd=true"
+                        class="btn-text"
+                        style="color: #6e2c00"
+                        target="_blank"
+                      >
+                        PowerPoint
+                        <ion-icon
+                          name="logo-windows"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </a>
+                    </div>
+
                     <a
                       href="https://crypto-amigo.onrender.com/"
                       class="btn-text"
                       style="color: #1a5276; font-size: 2rem"
                     >
-                      <span class="span">Δείτε το Project</span>
+                      <span language="Greek" class="span"
+                        >Δείτε το Project</span
+                      >
+
+                      <span
+                        language="English"
+                        class="span"
+                        style="display: none"
+                        >See Project</span
+                      >
 
                       <ion-icon
                         name="arrow-forward-outline"
@@ -478,7 +616,7 @@
 
                     <h3 class="h3 card-title">Read Crypto Charts</h3>
 
-                    <div class="card-text">
+                    <div language="Greek" class="card-text">
                       <p class="bold">Διαδικτυακή Εφαρμογή</p>
                       Εξερευνήστε την αγορά κρυπτονομισμάτων με την ολοκληρωμένη
                       πλατφόρμα χαρτογράφησης μου. Αναλύστε τάσεις και λάβετε
@@ -491,13 +629,36 @@
                       έτσι ώστε να μπορώ να τις αξιοποιήσω στις λειτουργίες
                       δεικτών και στα διαγράμματα που εμφανίζονται.
                     </div>
+                    <div
+                      language="English"
+                      class="card-text"
+                      style="display: none"
+                    >
+                      <p class="bold">Web Application</p>
+                      Explore the cryptocurrency market with my comprehensive
+                      chart platform. Analyze trends and receive informed
+                      decisions using a wide range indicators and tools.
+                      <p class="bold">Technologies</p>
+                      React Js.
+                      <p class="bold">Challenges, Achievements</p>
+                      Data format management by CoinGecko Api so that I can use
+                      them in indicator functions and in the charts that appear.
+                    </div>
 
                     <a
                       href="https://read-crypto-charts.onrender.com/"
                       class="btn-text"
                       style="color: #a93226"
                     >
-                      <span class="span">Δείτε το Project</span>
+                      <span language="Greek" class="span"
+                        >Δείτε το Project</span
+                      >
+                      <span
+                        language="English"
+                        class="span"
+                        style="display: none"
+                        >See Project</span
+                      >
 
                       <ion-icon
                         name="arrow-forward-outline"
@@ -533,7 +694,7 @@
 
                     <h3 class="h3 card-title">Excellence Pilates</h3>
 
-                    <div class="card-text">
+                    <div language="Greek" class="card-text">
                       <p class="bold">Ιστοσελίδα</p>
                       Ανακαλύψτε έναν κόσμο premium εξοπλισμού Pilates,
                       συμπεριλαμβανομένων των Reformers και των Cadillac, που
@@ -543,12 +704,33 @@
                       Wordpress.
                     </div>
 
+                    <div
+                      language="English"
+                      class="card-text"
+                      style="display: none"
+                    >
+                      <p class="bold">Website</p>
+                      Discover a world of premium Pilates equipment, including
+                      Reformers and Cadillacs, which designed to enhance your
+                      practice. Shop now for quality, functionality and comfort.
+                      <p class="bold">Technologies</p>
+                      Wordpress.
+                    </div>
+
                     <a
                       href="https://excellence-pilates.gr/"
                       class="btn-text"
                       style="color: #0e6655"
                     >
-                      <span class="span">Δείτε το Project</span>
+                      <span language="Greek" class="span"
+                        >Δείτε το Project</span
+                      >
+                      <span
+                        language="English"
+                        class="span"
+                        style="display: none"
+                        >See Project</span
+                      >
 
                       <ion-icon
                         name="arrow-forward-outline"
@@ -584,7 +766,7 @@
 
                     <h3 class="h3 card-title">Antikes Ioakeim</h3>
 
-                    <div class="card-text">
+                    <div language="Greek" class="card-text">
                       <p class="bold">Ιστοσελίδα</p>
                       Διατηρώντας το παρελθόν και δημιουργώντας το μέλλον. Η
                       εξειδικευμένη ομάδα "Antikes Ioakeim" ειδικεύεται στην
@@ -594,12 +776,34 @@
                       Wordpress.
                     </div>
 
+                    <div
+                      language="English"
+                      class="card-text"
+                      style="display: none"
+                    >
+                      <p class="bold">Website</p>
+                      Preserving the past and creating the future. The
+                      specialist team "Antikes Ioakeim" specializes in
+                      manufacture and restoration of antique furniture, bringing
+                      timeless beauty to your living spaces.
+                      <p class="bold">Technologies</p>
+                      Wordpress.
+                    </div>
+
                     <a
                       href="https://antikes-ioakeim.gr/"
                       class="btn-text"
                       style="color: #6e2c00"
                     >
-                      <span class="span">Δείτε το Project</span>
+                      <span language="Greek" class="span"
+                        >Δείτε το Project</span
+                      >
+                      <span
+                        language="English"
+                        class="span"
+                        style="display: none"
+                        >See Project</span
+                      >
 
                       <ion-icon
                         name="arrow-forward-outline"
@@ -646,13 +850,29 @@
                   />
                 </div>
 
-                <h2 class="h2 section-title">Επικοινωνία</h2>
+                <h2 language="Greek" class="h2 section-title">Επικοινωνία</h2>
+                <h2
+                  language="English"
+                  class="h2 section-title"
+                  style="display: none"
+                >
+                  Like what you see? <br />
+                  Lets work together!
+                </h2>
 
-                <p class="section-text">
-                  Έχετε μια ερώτηση, ιδέα έργου ή απλά θέλετε να πείτε ένα γεια;
-                  Μη διστάσετε να επικοινωνήσετε χρησιμοποιώντας την παρακάτω
-                  φόρμα επικοινωνίας ή σε κάποια social media εφαρμογή. Θα χαρώ
-                  να συνεργαστώ μαζί σας!
+                <p language="Greek" class="section-text">
+                  Έχετε μια ερώτηση, ιδέα έργου; Μη διστάσετε να επικοινωνήσετε
+                  χρησιμοποιώντας την παρακάτω φόρμα επικοινωνίας ή σε κάποια
+                  social media εφαρμογή. Θα χαρώ να συνεργαστώ μαζί σας!
+                </p>
+                <p
+                  language="English"
+                  class="section-text"
+                  style="display: none"
+                >
+                  Have a question, project idea? Feel free to get in touch using
+                  the below contact form or in some social media application. I
+                  will be happy to cooperate with you!
                 </p>
               </div>
 
@@ -662,6 +882,7 @@
                 class="contact-form"
                 data-reveal="right"
                 enctype="text/plain"
+                language="Greek"
               >
                 <div class="input-wrapper">
                   <input
@@ -688,8 +909,53 @@
                   class="input-field"
                 ></textarea>
 
-                <button type="submit" class="btn btn-secondary">
+                <button
+                  type="submit"
+                  class="btn btn-secondary"
+                >
                   Αποστολή
+                </button>
+              </form>
+
+              <form
+                action="mailto:kostas.pechlivanidis.dev@gmail.com"
+                method="post"
+                class="contact-form"
+                data-reveal="right"
+                enctype="text/plain"
+                language="English"
+                style="display: none;"
+              >
+                <div class="input-wrapper">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Name *"
+                    required
+                    class="input-field"
+                  />
+
+                  <input
+                    type="email"
+                    name="email_address"
+                    placeholder="Email *"
+                    required
+                    class="input-field"
+                  />
+                </div>
+
+                <textarea
+                  name="message"
+                  placeholder="Message *"
+                  required
+                  class="input-field"
+                ></textarea>
+
+                <button
+                  type="submit"
+                  class="btn btn-secondary"
+                >
+                  Send message
                 </button>
               </form>
             </div>

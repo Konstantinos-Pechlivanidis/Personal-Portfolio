@@ -242,6 +242,23 @@ body.nav-active {
   color: var(--white);
 }
 
+.btn-language {
+  color: var(--white);
+  font-size: var(--fs-8);
+  font-weight: var(--fw-700);
+  border: 2px solid var(--white);
+  max-width: max-content;
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  transition: var(--transition-1);
+  will-change: transform;
+}
+
+.btn-language:is(:hover, :focus-visible) {
+  background-color: var(--white);
+  color: var(--raisin-black);
+}
+
 .section-text {
   font-size: var(--fs-5);
 }
@@ -669,6 +686,17 @@ textarea.input-field {
   .contact-card {
     padding: 68px;
   }
+
+  /**
+   * LANGUAGE BUTTON
+   */
+
+   .btn-language {
+    border: 2px solid var(--white);
+    background-color: var(--white);
+    color: var(--raisin-black);
+  }
+   
 }
 
 /**
@@ -737,6 +765,16 @@ textarea.input-field {
 
   .copyright {
     margin-block-end: 0;
+  }
+
+  /**
+   * LANGUAGE BUTTON
+   */
+
+   .btn-language {
+    border: 2px solid var(--white);
+    background-color: var(--white);
+    color: var(--raisin-black);
   }
 }
 
@@ -905,6 +943,20 @@ textarea.input-field {
     align-items: center;
     gap: 90px;
   }
+
+  /**
+   * LANGUAGE BUTTON
+   */
+   .btn-language {
+    color: var(--dark-blue);
+    border: 2px solid var(--dark-blue);
+  }
+  
+  .btn-language:is(:hover, :focus-visible) {
+    background-color: var(--dark-blue);
+    color: var(--white);
+  }
+
 }
 
 /**
@@ -935,6 +987,19 @@ textarea.input-field {
 
   .contact-card {
     gap: 150px;
+  }
+
+  /**
+   * LANGUAGE BUTTON
+   */
+   .btn-language {
+    color: var(--dark-blue);
+    border: 2px solid var(--dark-blue);
+  }
+  
+  .btn-language:is(:hover, :focus-visible) {
+    background-color: var(--dark-blue);
+    color: var(--white);
   }
 }
 
@@ -974,5 +1039,18 @@ textarea.input-field {
 
   .about .grid-list {
     gap: 60px;
+  }
+
+  /**
+   * LANGUAGE BUTTON
+   */
+   .btn-language {
+    color: var(--dark-blue);
+    border: 2px solid var(--dark-blue);
+  }
+  
+  .btn-language:is(:hover, :focus-visible) {
+    background-color: var(--dark-blue);
+    color: var(--white);
   }
 }
