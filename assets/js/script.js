@@ -43,9 +43,12 @@ const englishContent = document.querySelectorAll('[language="English"]');
 let isGreek = true;
 
 toggleButton.addEventListener("click", function () {
+  
   // Zoho Pagesense (Test)
+  let value = 1;
   var activityName = 'key';
-  var activityJSON = {'value': 1};
+  var activityJSON = {'value': value};
+  value=0;
   window.pagesense = window.pagesense || [];
   window.pagesense.push(['trackActivity', activityName, activityJSON]);
   
