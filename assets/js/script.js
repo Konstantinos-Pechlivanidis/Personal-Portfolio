@@ -47,9 +47,10 @@ toggleButton.addEventListener("click", function () {
   // Zoho Pagesense (Test)
   var activityName = 'key';
   var activityJSON = {'value': value};
-  // window.pagesense = window.pagesense || [];
+  window.pagesense = window.pagesense || [];
   window.pagesense.push(['trackActivity', activityName, activityJSON]);
-
+  window.pagesense = window.pagesense || [];
+  
   const mobileNav = document.querySelector(".navbar.active");
   isGreek = !isGreek;
   isGreek
