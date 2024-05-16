@@ -41,11 +41,11 @@ const toggleButton = document.getElementById("toggle-language-button");
 const greekContent = document.querySelectorAll('[language="Greek"]');
 const englishContent = document.querySelectorAll('[language="English"]');
 let isGreek = true;
-let value = 0;
+
 toggleButton.addEventListener("click", function () {
   
   // Zoho Pagesense (Test)
-  value=1;
+  let value=2;
   var activityName = 'key';
   var activityJSON = {'value': value};
   window.pagesense = window.pagesense || [];
