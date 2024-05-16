@@ -49,7 +49,7 @@ toggleButton.addEventListener("click", function () {
   var activityJSON = {'value': 5};
   window.pagesense = window.pagesense || [];
   window.pagesense.push(['trackActivity', activityName, activityJSON]);
-  window.pagesense = window.pagesense || [];
+  window.pagesense = [];
   
   const mobileNav = document.querySelector(".navbar.active");
   isGreek = !isGreek;
