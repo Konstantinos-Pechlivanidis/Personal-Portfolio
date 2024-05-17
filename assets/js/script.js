@@ -42,17 +42,11 @@ const greekContent = document.querySelectorAll('[language="Greek"]');
 const englishContent = document.querySelectorAll('[language="English"]');
 let isGreek = true;
 
-  // Zoho Pagesense
-  let value = -2;
-  if (value > 0) {
-    var activityName = 'key';
-    var activityJSON = {'value': value};
-    window.pagesense = window.pagesense || [];
-    window.pagesense.push(['trackActivity', activityName, activityJSON]);
-  }
-
 toggleButton.addEventListener("click", function () {
-  value = value +1;
+  var activityName = 'key';
+  var activityJSON = {'value': 20};
+  window.pagesense = window.pagesense || [];
+  window.pagesense.push(['trackActivity', activityName, activityJSON]);
   
   const mobileNav = document.querySelector(".navbar.active");
   isGreek = !isGreek;
