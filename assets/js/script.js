@@ -41,18 +41,18 @@ const toggleButton = document.getElementById("toggle-language-button");
 const greekContent = document.querySelectorAll('[language="Greek"]');
 const englishContent = document.querySelectorAll('[language="English"]');
 let isGreek = true;
-let value = 1;
-toggleButton.addEventListener("click", function () {
-  
+
+  // Zoho Pagesense
+  let value = -2;
   if (value > 0) {
     var activityName = 'key';
     var activityJSON = {'value': value};
     window.pagesense = window.pagesense || [];
     window.pagesense.push(['trackActivity', activityName, activityJSON]);
-    
-    // Set value to 0 after tracking
-    value = 0;
   }
+
+toggleButton.addEventListener("click", function () {
+  value = value +1;
   
   const mobileNav = document.querySelector(".navbar.active");
   isGreek = !isGreek;
