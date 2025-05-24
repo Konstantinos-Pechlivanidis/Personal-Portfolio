@@ -112,3 +112,36 @@ for (let i = 0, len = revealDelayElements.length; i < len; i++) {
 
 window.addEventListener("scroll", reveal);
 window.addEventListener("load", reveal);
+
+const forms = document.querySelectorAll(".contact-form");
+
+  forms.forEach((form) => {
+    form.addEventListener("submit", async function (e) {
+      e.preventDefault();
+      const responseBox = document.getElementById("form-response");
+
+      const formData = new FormData(form);
+      try {
+        const response = await fetch(form.action, {
+          method: "POST",
+          body: formData,
+          headers: {
+            Accept: "application/json",
+          },
+        });
+
+        if (response.ok) {
+          form.reset();
+          responseBox.style.display = "block";
+          responseBox.style.color = "green";
+          responseBox.innerText = "✅ Το μήνυμά σας εστάλη με επιτυχία!";
+        } else {
+          throw new Error("Form submission failed");
+        }
+      } catch (error) {
+        responseBox.style.display = "block";
+        responseBox.style.color = "red";
+        responseBox.innerText = "❌ Κάτι πήγε στραβά. Δοκιμάστε ξανά.";
+      }
+    });
+  });

@@ -595,6 +595,111 @@ img {
   border-radius: 8px;
 }
 
+.project-card {
+  background: linear-gradient(145deg, #fdfdfd, #f0f4f8);
+  padding: 32px 24px;
+  border-radius: var(--radius-8);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: -10%;
+  right: -10%;
+  width: 120%;
+  height: 120%;
+  background: radial-gradient(circle at top right, #eaf2f8, transparent);
+  z-index: 0;
+  opacity: 0.2;
+}
+
+.project-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 10px 24px rgba(27, 79, 114, 0.12);
+}
+
+.project-card h3 {
+  font-size: var(--fs-3);
+  margin-bottom: 12px;
+  color: var(--charcoal);
+  position: relative;
+}
+
+.project-card h3::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 3px;
+  background-color: var(--dark-blue);
+  border-radius: 6px;
+  margin-top: 6px;
+}
+
+.project-card p {
+  font-size: var(--fs-6);
+  color: var(--black-coral);
+  margin-bottom: 18px;
+  z-index: 1;
+  position: relative;
+}
+
+.project-card .links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  z-index: 1;
+  position: relative;
+}
+
+.project-card .links a {
+  font-size: var(--fs-8);
+  font-weight: 700;
+  background-color: #ffffff;
+  border: 1.5px solid var(--dark-blue);
+  color: var(--dark-blue);
+  padding: 8px 14px;
+  border-radius: var(--radius-pill);
+  transition: all 0.3s ease;
+}
+
+.project-card .links a:hover {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  box-shadow: 0 4px 10px rgba(27, 79, 114, 0.15);
+}
+.omni-bg {
+  background: linear-gradient(135deg, #ebf5fb, #d6eaf8);
+}
+
+.yummy-bg {
+  background: linear-gradient(135deg, #fef5e7, #fdebd0);
+}
+
+.electron-bg {
+  background: linear-gradient(135deg, #e8f8f5, #d1f2eb);
+}
+
+.johndeere-bg {
+  background: linear-gradient(135deg, #eafaf1, #d5f5e3);
+}
+
+.readcrypto-bg {
+  background: linear-gradient(135deg, #f4ecf7, #e8daef);
+}
+
+.cryptoamigo-bg {
+  background: linear-gradient(135deg, #fdf2e9, #fae5d3);
+}
+
+.cryptoapi-bg {
+  background: linear-gradient(135deg, #f2f4f4, #d5dbdb);
+}
+
 /*-----------------------------------*\
   #CONTACT
 \*-----------------------------------*/
